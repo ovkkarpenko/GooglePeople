@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		407DC7F5F55F58387B4E8584 /* Pods_GooglePeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F17ADB5FC505EA71E21FAFF /* Pods_GooglePeople.framework */; };
+		FA22832F259B73E8007F0DD9 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22832E259B73E8007F0DD9 /* ContactViewController.swift */; };
+		FA228334259B743B007F0DD9 /* GoogleApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA228333259B743B007F0DD9 /* GoogleApiService.swift */; };
+		FA228338259B74D8007F0DD9 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA228337259B74D8007F0DD9 /* ServerConfig.swift */; };
+		FA22833C259B790D007F0DD9 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22833B259B790D007F0DD9 /* ContactModel.swift */; };
+		FA228380259B934F007F0DD9 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22837F259B934F007F0DD9 /* ContactTableViewCell.swift */; };
+		FA43A199259A5B19006EE951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A198259A5B19006EE951 /* AppDelegate.swift */; };
+		FA43A1A2259A5B1A006EE951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA43A1A1259A5B1A006EE951 /* Assets.xcassets */; };
+		FA43A1A5259A5B1A006EE951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43A1A3259A5B1A006EE951 /* LaunchScreen.storyboard */; };
+		FA43A1BA259A5B25006EE951 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A1B0259A5B25006EE951 /* AuthViewController.swift */; };
+		FA43A1BB259A5B25006EE951 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A1B3259A5B25006EE951 /* AppConfig.swift */; };
+		FA43A1BC259A5B25006EE951 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A1B6259A5B25006EE951 /* PrimaryButton.swift */; };
+		FA43A1BD259A5B25006EE951 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A1B8259A5B25006EE951 /* Utils.swift */; };
+		FA43A1BE259A5B25006EE951 /* ConstantsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A1B9259A5B25006EE951 /* ConstantsHelper.swift */; };
+		FA99497C259A5DC00080A8D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA99497B259A5DC00080A8D7 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F17ADB5FC505EA71E21FAFF /* Pods_GooglePeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FD1D115D5F92C44563D1C7 /* Pods-GooglePeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePeople.release.xcconfig"; path = "Target Support Files/Pods-GooglePeople/Pods-GooglePeople.release.xcconfig"; sourceTree = "<group>"; };
+		EE11E740AB7C596C057D09F0 /* Pods-GooglePeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePeople.debug.xcconfig"; path = "Target Support Files/Pods-GooglePeople/Pods-GooglePeople.debug.xcconfig"; sourceTree = "<group>"; };
+		FA22832E259B73E8007F0DD9 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FA228333259B743B007F0DD9 /* GoogleApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleApiService.swift; sourceTree = "<group>"; };
+		FA228337259B74D8007F0DD9 /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
+		FA22833B259B790D007F0DD9 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		FA22837F259B934F007F0DD9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		FA43A195259A5B19006EE951 /* GooglePeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA43A198259A5B19006EE951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA43A1A1259A5B1A006EE951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA43A1A4259A5B1A006EE951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA43A1A6259A5B1A006EE951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA43A1B0259A5B25006EE951 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FA43A1B3259A5B25006EE951 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		FA43A1B6259A5B25006EE951 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		FA43A1B8259A5B25006EE951 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FA43A1B9259A5B25006EE951 /* ConstantsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsHelper.swift; sourceTree = "<group>"; };
+		FA99497B259A5DC00080A8D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA43A192259A5B19006EE951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407DC7F5F55F58387B4E8584 /* Pods_GooglePeople.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1806071E1D4267A5B86350AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F17ADB5FC505EA71E21FAFF /* Pods_GooglePeople.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F317CCB1387BAF46D9F037A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE11E740AB7C596C057D09F0 /* Pods-GooglePeople.debug.xcconfig */,
+				D3FD1D115D5F92C44563D1C7 /* Pods-GooglePeople.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA22832C259B73D9007F0DD9 /* ContactScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA22837E259B9338007F0DD9 /* View */,
+				FA228332259B7426007F0DD9 /* ViewModel */,
+				FA22832D259B73DD007F0DD9 /* Controller */,
+			);
+			path = ContactScreen;
+			sourceTree = "<group>";
+		};
+		FA22832D259B73DD007F0DD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA22832E259B73E8007F0DD9 /* ContactViewController.swift */,
+			);
+			name = Controller;
+			path = "../New Group/Controller";
+			sourceTree = "<group>";
+		};
+		FA228332259B7426007F0DD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA22833A259B7906007F0DD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA22833B259B790D007F0DD9 /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA22837E259B9338007F0DD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA22837F259B934F007F0DD9 /* ContactTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA43A18C259A5B19006EE951 = {
+			isa = PBXGroup;
+			children = (
+				FA43A197259A5B19006EE951 /* GooglePeople */,
+				FA99497B259A5DC00080A8D7 /* GoogleService-Info.plist */,
+				FA43A196259A5B19006EE951 /* Products */,
+				F317CCB1387BAF46D9F037A7 /* Pods */,
+				1806071E1D4267A5B86350AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA43A196259A5B19006EE951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A195259A5B19006EE951 /* GooglePeople.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA43A197259A5B19006EE951 /* GooglePeople */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1AD259A5B25006EE951 /* Modules */,
+				FA43A1C0259A5B3B006EE951 /* SupportingFile */,
+			);
+			path = GooglePeople;
+			sourceTree = "<group>";
+		};
+		FA43A1AD259A5B25006EE951 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA22832C259B73D9007F0DD9 /* ContactScreen */,
+				FA43A1AE259A5B25006EE951 /* AuthScreen */,
+				FA43A1B1259A5B25006EE951 /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA43A1AE259A5B25006EE951 /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1AF259A5B25006EE951 /* Controller */,
+			);
+			path = AuthScreen;
+			sourceTree = "<group>";
+		};
+		FA43A1AF259A5B25006EE951 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1B0259A5B25006EE951 /* AuthViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA43A1B1259A5B25006EE951 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA22833A259B7906007F0DD9 /* Model */,
+				FA43A1B2259A5B25006EE951 /* Configuration */,
+				FA43A1B4259A5B25006EE951 /* Repositorie */,
+				FA43A1B5259A5B25006EE951 /* View */,
+				FA43A1B7259A5B25006EE951 /* Helper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA43A1B2259A5B25006EE951 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1B3259A5B25006EE951 /* AppConfig.swift */,
+				FA228337259B74D8007F0DD9 /* ServerConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FA43A1B4259A5B25006EE951 /* Repositorie */ = {
+			isa = PBXGroup;
+			children = (
+				FA228333259B743B007F0DD9 /* GoogleApiService.swift */,
+			);
+			path = Repositorie;
+			sourceTree = "<group>";
+		};
+		FA43A1B5259A5B25006EE951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1B6259A5B25006EE951 /* PrimaryButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA43A1B7259A5B25006EE951 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A1B8259A5B25006EE951 /* Utils.swift */,
+				FA43A1B9259A5B25006EE951 /* ConstantsHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FA43A1C0259A5B3B006EE951 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A198259A5B19006EE951 /* AppDelegate.swift */,
+				FA43A1A1259A5B1A006EE951 /* Assets.xcassets */,
+				FA43A1A3259A5B1A006EE951 /* LaunchScreen.storyboard */,
+				FA43A1A6259A5B1A006EE951 /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA43A194259A5B19006EE951 /* GooglePeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA43A1A9259A5B1A006EE951 /* Build configuration list for PBXNativeTarget "GooglePeople" */;
+			buildPhases = (
+				9E97C16E134F0348FB03E185 /* [CP] Check Pods Manifest.lock */,
+				FA43A191259A5B19006EE951 /* Sources */,
+				FA43A192259A5B19006EE951 /* Frameworks */,
+				FA43A193259A5B19006EE951 /* Resources */,
+				A9F47D22BC3316AC7F69196E /* [CP] Embed Pods Frameworks */,
+				62ADD80623D747ABEF82A38C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePeople;
+			productName = GooglePeople;
+			productReference = FA43A195259A5B19006EE951 /* GooglePeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA43A18D259A5B19006EE951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FA43A194259A5B19006EE951 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = FA43A190259A5B19006EE951 /* Build configuration list for PBXProject "GooglePeople" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA43A18C259A5B19006EE951;
+			productRefGroup = FA43A196259A5B19006EE951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA43A194259A5B19006EE951 /* GooglePeople */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA43A193259A5B19006EE951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43A1A5259A5B1A006EE951 /* LaunchScreen.storyboard in Resources */,
+				FA43A1A2259A5B1A006EE951 /* Assets.xcassets in Resources */,
+				FA99497C259A5DC00080A8D7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62ADD80623D747ABEF82A38C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E97C16E134F0348FB03E185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePeople-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F47D22BC3316AC7F69196E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePeople/Pods-GooglePeople-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA43A191259A5B19006EE951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43A1BC259A5B25006EE951 /* PrimaryButton.swift in Sources */,
+				FA228334259B743B007F0DD9 /* GoogleApiService.swift in Sources */,
+				FA228380259B934F007F0DD9 /* ContactTableViewCell.swift in Sources */,
+				FA22832F259B73E8007F0DD9 /* ContactViewController.swift in Sources */,
+				FA43A1BA259A5B25006EE951 /* AuthViewController.swift in Sources */,
+				FA228338259B74D8007F0DD9 /* ServerConfig.swift in Sources */,
+				FA43A1BB259A5B25006EE951 /* AppConfig.swift in Sources */,
+				FA43A1BD259A5B25006EE951 /* Utils.swift in Sources */,
+				FA43A1BE259A5B25006EE951 /* ConstantsHelper.swift in Sources */,
+				FA22833C259B790D007F0DD9 /* ContactModel.swift in Sources */,
+				FA43A199259A5B19006EE951 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA43A1A3259A5B1A006EE951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA43A1A4259A5B1A006EE951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA43A1A7259A5B1A006EE951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA43A1A8259A5B1A006EE951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA43A1AA259A5B1A006EE951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE11E740AB7C596C057D09F0 /* Pods-GooglePeople.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMGHP5L64B;
+				INFOPLIST_FILE = "$(SRCROOT)/GooglePeople/SupportingFile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanyakarpenko.GooglePeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA43A1AB259A5B1A006EE951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FD1D115D5F92C44563D1C7 /* Pods-GooglePeople.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMGHP5L64B;
+				INFOPLIST_FILE = "$(SRCROOT)/GooglePeople/SupportingFile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sanyakarpenko.GooglePeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA43A190259A5B19006EE951 /* Build configuration list for PBXProject "GooglePeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA43A1A7259A5B1A006EE951 /* Debug */,
+				FA43A1A8259A5B1A006EE951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA43A1A9259A5B1A006EE951 /* Build configuration list for PBXNativeTarget "GooglePeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA43A1AA259A5B1A006EE951 /* Debug */,
+				FA43A1AB259A5B1A006EE951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA43A18D259A5B19006EE951 /* Project object */;
+}
