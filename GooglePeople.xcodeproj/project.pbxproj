@@ -78,9 +78,9 @@
 		FA22832C259B73D9007F0DD9 /* ContactScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FA22832D259B73DD007F0DD9 /* Controller */,
 				FA22837E259B9338007F0DD9 /* View */,
 				FA228332259B7426007F0DD9 /* ViewModel */,
-				FA22832D259B73DD007F0DD9 /* Controller */,
 			);
 			path = ContactScreen;
 			sourceTree = "<group>";
@@ -90,8 +90,7 @@
 			children = (
 				FA22832E259B73E8007F0DD9 /* ContactViewController.swift */,
 			);
-			name = Controller;
-			path = "../New Group/Controller";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FA228332259B7426007F0DD9 /* ViewModel */ = {
